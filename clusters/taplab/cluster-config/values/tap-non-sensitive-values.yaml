@@ -27,9 +27,6 @@ tap_install:
       kp_default_repository: harbor.harborlab.fynesy.com/tap/buildservice
       exclude_dependencies: true
     tap_gui:
-      tls:
-        namespace: tanzu-system-ingress
-        secretName: taptlscert
       service_type: ClusterIP
       metadataStoreAutoconfiguration: true
       app_config:
@@ -49,7 +46,6 @@ tap_install:
       tuf_enabled: false
     cnrs:
       domain_template: '{{.Name}}-{{.Namespace}}.{{.Domain}}'
-      default_tls_secret: tanzu-system-ingress/taptlscert
     api_portal:
       apiPortalServer:
         sourceUrls: https://petstore.swagger.io/v2/swagger.json,http://scg-openapi-service.spring-cloud-gateway.svc.cluster.local/openapi

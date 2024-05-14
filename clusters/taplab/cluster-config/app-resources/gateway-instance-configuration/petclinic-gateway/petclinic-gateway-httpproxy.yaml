@@ -13,4 +13,4 @@ spec:
   virtualhost:
     fqdn: petclinic.tap-1.tanzu.pro
     tls:
-      secretName: taptlscert
+      secretName: petclinic-gateway-tls-cert

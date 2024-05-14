@@ -13,4 +13,4 @@ spec:
   virtualhost:
     fqdn: petclinic.INGRESS_DOMAIN
     tls:
-      secretName: taptlscert
+      secretName: petclinic-gateway-tls-cert

@@ -6,7 +6,7 @@ metadata:
 spec:
   dnsNames:
   - petclinic.tap-1.tanzu.pro
-  secretName: taptlscert
+  secretName: petclinic-gateway-tls-cert
   issuerRef:
     name: letsencrypt-production
     kind: ClusterIssuer

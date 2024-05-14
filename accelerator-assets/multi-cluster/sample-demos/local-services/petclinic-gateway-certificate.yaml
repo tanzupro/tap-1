@@ -6,7 +6,7 @@ metadata:
 spec:
   dnsNames:
   - petclinic.INGRESS_DOMAIN
-  secretName: taptlscert
+  secretName: petclinic-gateway-tls-cert
   issuerRef:
     name: letsencrypt-production
     kind: ClusterIssuer

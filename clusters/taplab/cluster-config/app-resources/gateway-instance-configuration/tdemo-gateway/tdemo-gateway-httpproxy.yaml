@@ -13,4 +13,4 @@ spec:
   virtualhost:
     fqdn: tdemo.tap-1.tanzu.pro
     tls:
-      secretName: taptlscert
+      secretName: tdemo-gateway-tls-cert
