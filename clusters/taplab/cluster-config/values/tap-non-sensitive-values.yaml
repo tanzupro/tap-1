@@ -3,7 +3,7 @@ tap_install:
     excluded_packages: []
     shared:
       ingress_domain: tap-1.tanzu.pro
-      ingress_issuer: ""
+      ingress_issuer: "letsencrypt-production"
     ceip_policy_disclosed: true
     profile: full
     supply_chain: testing_scanning
