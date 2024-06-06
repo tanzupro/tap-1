@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: aria-auto-rolebinding
+  namespace: default
+subjects:
+- kind: ServiceAccount
+  name: aria-auto-sa
+  namespace: app-resources
+roleRef:
+  kind: Role
+  name: aria-auto-role
+  apiGroup: rbac.authorization.k8s.io
